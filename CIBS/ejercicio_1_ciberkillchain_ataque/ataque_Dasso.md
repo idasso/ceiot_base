@@ -30,22 +30,24 @@ Desarrollo de plataforma para la integración y visualización de datos originad
   
 ### Delivery
 * Phishing: envío el correo diseñado a los usuarios de la plataforma.
+  - T1566.001
   
 ### Exploit
 * En el correo incluyo un documento en PDF solicita contraseñas de la plataforma para acceder al contenido.
 * Habiendo adquirido los accesos, ingreso a la plataforma y evalúo la forma más adecuada de redirigir la información evitando ser detectado.
 * Diseño un script que pueda correr como usuario tal que en simultáneo redireccione los datos al servidor gemelo y comience a inyectar datos desde una base de datos dummy.
-  - _Consulta: para hacer llegar este script del paso anterior tengo que considerar un nuevo delivery, ¿correcto?_
-* Inspecciono los datos que se trafican para diseñar los datos dummy que tendrán que estar en la base de datos. Puedo definir una regla tal que los datos dummy sean los datos útiles afectados por una función.
+* [Delivery] Envío el script a la plataforma
+* [Reconnaissance] T1040 - Network sniffing: Inspecciono los datos que se trafican para diseñar los datos dummy que tendrán que estar en la base de datos.
+* Defino una regla tal que los datos dummy sean los datos útiles afectados por una función.
   
 ### Installation  
 * Implemento el script en la plataforma tal que esté listo para activar la modificación en la provisión y reenvío de datos en el momento deseado
-* Ejecuto una prueba con una operación de tráfico de baja frecuencia.
-
+* Ejecuto una prueba con una operación de tráfico de baja visibilidad o impacto en la plataforma.
+* Selecciono los objetivos a atacar por el servicio.
 
 ### Command & Control
-* Confirmo cuáles las conexiones de entrada/salida de datos.
-* Completo configuraciones de reenvío de datos útiles y de provisión de datos dummy.
+* Inicio el ataque. Se corre el script reconfigurando las conexiones de entrada/salida de datos.
+* Observo que el desempeño de la plataforma no varíe apreciablemente.
   
 ### Actions on Objectives
-* Inicio en simultáneo la inserción de datos dummy y el reenvío de datos a la base de datos gemela.
+* Corroboro que los datos dummy se estén inyectando y que la base de datos gemela esté adquiriendo los datos útiles.
