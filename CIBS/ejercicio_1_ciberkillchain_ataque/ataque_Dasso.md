@@ -26,28 +26,28 @@ Desarrollo de plataforma para la integración y visualización de datos originad
   - Armo también la base de datos que utilizaré para inyectar datos dummy mientras robo los datos útiles. 
 * Decido implementar una metodología de Phishing para hacer el delivery
   - Habiendo detectado la identidad de algún referente de proyecto, diseño un mensaje impostando al referente que envíe un "manual actualizado" de la plataforma en PDF a usuarios de la plataforma.
-  - Diseño el PDF tal que solicite credenciales del sistema para acceder al contenido.
+* T1587.001:
+  - Diseño un malware #1 que infecte la PC del usuario al abrir el PDF, robe contraseñas de navegadores y habilite un acceso remoto.
+  - Diseño un malware #2 que en simultáneo redireccione los datos al servidor gemelo y comience a inyectar datos desde una base de datos dummy. T1565.003: Defino una regla tal que los datos dummy sean los datos útiles afectados por una función.
   
 ### Delivery
 * Phishing: envío el correo diseñado a los usuarios de la plataforma.
   - T1566.001
   
 ### Exploit
-* En el correo incluyo un documento en PDF solicita contraseñas de la plataforma para acceder al contenido.
-* Habiendo adquirido los accesos, ingreso a la plataforma y evalúo la forma más adecuada de redirigir la información evitando ser detectado.
-* Diseño un script que pueda correr como usuario tal que en simultáneo redireccione los datos al servidor gemelo y comience a inyectar datos desde una base de datos dummy.
-* [Delivery] Envío el script a la plataforma
+* T1555.003: Robo las credenciales para acceso al portal.
+* T1219: Establezco el acceso remoto.
+* T1078.003: Elevo el privilegio de la cuenta para obtener capacidad de edición del portal.
+* [Delivery] Utilizo el acceso remoto para enviar el malware #2 a la PC infectada.
 * [Reconnaissance] T1040 - Network sniffing: Inspecciono los datos que se trafican para diseñar los datos dummy que tendrán que estar en la base de datos.
-* Defino una regla tal que los datos dummy sean los datos útiles afectados por una función.
   
 ### Installation  
-* Implemento el script en la plataforma tal que esté listo para activar la modificación en la provisión y reenvío de datos en el momento deseado
-* Ejecuto una prueba con una operación de tráfico de baja visibilidad o impacto en la plataforma.
-* Selecciono los objetivos a atacar por el servicio.
+* Tengo las credenciales.
+* Instalo el malware #2
 
 ### Command & Control
-* Inicio el ataque. Se corre el script reconfigurando las conexiones de entrada/salida de datos.
-* Observo que el desempeño de la plataforma no varíe apreciablemente.
+* Selecciono los objetivos a atacar por el servicio.
+* Altero las conexiones de entrada/salida de datos.
   
 ### Actions on Objectives
-* Corroboro que los datos dummy se estén inyectando y que la base de datos gemela esté adquiriendo los datos útiles.
+* T1567.002 + T1565.003: Corroboro que los datos dummy se estén inyectando y que la base de datos gemela esté adquiriendo los datos útiles.
