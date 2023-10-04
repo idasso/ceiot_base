@@ -21,7 +21,7 @@ Para cada etapa elegir una sola defensa, la más importante, considerar recursos
   
 ### Installation  
 * [M1033](https://attack.mitre.org/mitigations/M1033/): Limit Software Installation.
-* Monitorear uso de recursos y desempaño de servicores.
+* Monitorear uso de recursos y desempeño de servidores.
 
 ### Exploit
 * [DS0009](https://attack.mitre.org/datasources/DS0009/): Detección de procesos vinculados con softwares de control remoto y matar los procesos en curso que no estén autorizados.
