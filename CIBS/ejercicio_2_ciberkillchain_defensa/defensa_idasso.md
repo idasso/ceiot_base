@@ -25,10 +25,10 @@ Para cada etapa elegir una sola defensa, la más importante, considerar recursos
 
 ### Exploit
 * [DS0009](https://attack.mitre.org/datasources/DS0009/): Detección de procesos vinculados con softwares de control remoto y matar los procesos en curso que no estén autorizados.
-* [M1027](https://attack.mitre.org/mitigations/M1027/): Password policies.
+* [M1027](https://attack.mitre.org/mitigations/M1027/): Password policies. Definir criterios de cumplimiento obligatorio para la selección y renovación periódica de contraseñas.
 
 ### Delivery
-* [M1017](https://attack.mitre.org/mitigations/M1017/): User training. Concientizar en riegos asociados, buenas prácticas para el uso de recursos de la compañía y la navegación e interacciones en internet.
+* [M1017](https://attack.mitre.org/mitigations/M1017/): User training. Concientizar en riegos asociados a comunicaciones vía mail externas a la organización, buenas prácticas para el uso de recursos de la compañía y la navegación e interacciones en internet.
 
 ### Weaponization
 
