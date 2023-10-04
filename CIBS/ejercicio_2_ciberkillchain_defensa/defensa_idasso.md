@@ -28,7 +28,7 @@ Para cada etapa elegir una sola defensa, la más importante, considerar recursos
 * [M1027](https://attack.mitre.org/mitigations/M1027/): Password policies.
 
 ### Delivery
-* Prevención de Phishing
+* [M1017](https://attack.mitre.org/mitigations/M1017/): User training. Concientizar en riegos asociados, buenas prácticas para el uso de recursos de la compañía y la navegación e interacciones en internet.
 
 ### Weaponization
 
