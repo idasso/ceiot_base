@@ -33,3 +33,6 @@ Para cada etapa elegir una sola defensa, la más importante, considerar recursos
 ### Weaponization
 
 ### Reconnaissance
+[M1056](https://attack.mitre.org/mitigations/M1056/): Pre-compromise. 
+*	Definir políticas para limitar o condicionar la difusión de información vinculada a la compañía por parte de los usuarios en redes sociales.
+*	Bloquear ICMP para consultas generadas por fuera de la organización.
