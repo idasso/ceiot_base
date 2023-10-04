@@ -12,3 +12,24 @@ Para cada etapa elegir una sola defensa, la más importante, considerar recursos
 
 ## Resolución
 
+### Actions on Objectives
+* [M1030](https://attack.mitre.org/mitigations/M1030/): Network segmentation. Separar los diferentes elementos de la red en espacios aislados permitiendo el intercambio únicamente entre servidores autenticados.
+
+### Command & Control
+* [M1022](https://attack.mitre.org/mitigations/M1022/): Restrict File and Directory Permissions.
+* Monitorear logs de configuración de fuera de períodos de puesta en operación de nuevos servicios.
+  
+### Installation  
+* [M1033](https://attack.mitre.org/mitigations/M1033/): Limit Software Installation.
+* Monitorear uso de recursos y desempaño de servicores.
+
+### Exploit
+* [DS0009](https://attack.mitre.org/datasources/DS0009/): Detección de procesos vinculados con softwares de control remoto y matar los procesos en curso que no estén autorizados.
+* [M1027](https://attack.mitre.org/mitigations/M1027/): Password policies.
+
+### Delivery
+* Prevención de Phishing
+
+### Weaponization
+
+### Reconnaissance
