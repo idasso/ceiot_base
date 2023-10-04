@@ -51,4 +51,4 @@ Desarrollo de plataforma para la integración y visualización de datos originad
   
 ### Actions on Objectives
 * [T1567.002](https://attack.mitre.org/techniques/T1567/002/) + [T1565.003](https://attack.mitre.org/techniques/T1565/003/): Corroboro que los datos dummy se estén inyectando y que la base de datos gemela esté adquiriendo los datos útiles.
-* Una vez adquirido un volumen de datos de 6 meses, contactar a los interesados de la información auténtica para solicitar el pago a cambio de la información.
+* Una vez adquirido un volumen de datos equivalente a 6 meses intervención, contacto a la víctima y solicito el pago a cambio de la información.
