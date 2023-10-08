@@ -17,8 +17,6 @@ Desarrollo de plataforma para la integración y visualización de datos originad
   -  [T1589.002](https://attack.mitre.org/techniques/T1589/002/). Enumerar direcciones de mail a través de Office 365 [Link](https://github.com/gremwell/o365enum)
 * Evalúo qué direcciones IP intervienen al cargar el portal y obtengo la URL del portal ofrecido por Arsat.
   - [T1595.001](https://attack.mitre.org/techniques/T1595/001/). Escaneo de bloques IP usando consultas y respuestas ICMP. Utilizo las IP que proveen respuesta para identificar diferentes web asociadas a Arsat.
-* Identifico dónde está la base de datos y cómo se estructura
-  - _Técnica a definir._
 
 ### Weaponization
 * Decido armar una base de datos gemela a dónde se reeviarán los datos, alterar las configuraciones de origen/destino de la información y aportar información dummy que no alerte de la intervención.
@@ -39,7 +37,7 @@ Desarrollo de plataforma para la integración y visualización de datos originad
 * [T1219](https://attack.mitre.org/techniques/T1219/): Establezco el acceso remoto.
 * [T1078.003](https://attack.mitre.org/techniques/T1078/003/): Elevo el privilegio de la cuenta para obtener capacidad de edición del portal.
 * [Delivery] Utilizo el acceso remoto para enviar el malware #2 a la PC infectada.
-* [Reconnaissance] [T1040](https://attack.mitre.org/techniques/T1040/) - Network sniffing: Inspecciono los datos que se trafican para diseñar los datos dummy que tendrán que estar en la base de datos.
+* [Reconnaissance] [T1040](https://attack.mitre.org/techniques/T1040/): Una ver dentro de la red implemento Network sniffing para identificar la ubicación de la base de datos. En función del trafico inspeccionado, obtengo cómo se construyen los mensajes de escritura.
 * Selecciono los objetivos a atacar por el servicio.
   
 ### Installation  
