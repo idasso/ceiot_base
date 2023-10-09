@@ -13,7 +13,7 @@ Para cada etapa elegir una sola defensa, la más importante, considerar recursos
 ## Resolución
 
 ### Actions on Objectives
-* [M1030](https://attack.mitre.org/mitigations/M1030/): Network segmentation. Separar los diferentes elementos de la red en espacios aislados permitiendo el intercambio únicamente entre servidores autenticados.
+* Separar los diferentes elementos de la red ([M1030](https://attack.mitre.org/mitigations/M1030/): Network segmentation) en espacios aislados permitiendo el intercambio únicamente entre servidores autenticados.
 
 ### Command & Control
 * [M1022](https://attack.mitre.org/mitigations/M1022/): Restrict File and Directory Permissions.
@@ -33,6 +33,7 @@ Para cada etapa elegir una sola defensa, la más importante, considerar recursos
 
 ### Weaponization
 * [M1051](https://attack.mitre.org/mitigations/M1051/): Update Software. Mantener los programas de la computadora actualizados a fin de prevenir que durante el Reconnaissance se detecten vulnerabilidades en las versiones disponibles de software que puedan explotarse.
+* [M1042](https://attack.mitre.org/mitigations/M1042/): En caso de detectar programas vulnerables que no tienen un parche de seguridad disponible o un modo seguro de operación, deshabilitar o quitar esos programas,
 
 ### Reconnaissance
 [M1056](https://attack.mitre.org/mitigations/M1056/): Pre-compromise. 
