@@ -29,7 +29,7 @@ Para cada etapa elegir una sola defensa, la más importante, considerar recursos
 
 ### Delivery
 * [M1017](https://attack.mitre.org/mitigations/M1017/): User training. Concientizar en riegos asociados a comunicaciones vía mail externas a la organización, buenas prácticas para el uso de recursos de la compañía y la navegación e interacciones en internet.
-* Bloquear puertos USB de los equipo de empleados que no necesiten sus tareas habituales.
+* [M1034](https://attack.mitre.org/mitigations/M1034/): Bloquear puertos USB de los equipo de empleados que no necesiten sus tareas habituales.
 
 ### Weaponization
 * [M1051](https://attack.mitre.org/mitigations/M1051/): Update Software. Mantener los programas de la computadora actualizados a fin de prevenir que durante el Reconnaissance se detecten vulnerabilidades en las versiones disponibles de software que puedan explotarse.
